@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="CalculateLease"
+        android:text="@string/calculate_monthly_payment" />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_below="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Enter Number of Months" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_below="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_below="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Enter Down Payment" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_below="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="0dp"
+        android:layout_weight="1"
+        android:text="Enter Lease Rate" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_below="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="46dp"
+        android:layout_weight="1"
+        android:text="Car Value at Lease End" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_below="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        />
+
+
+</RelativeLayout>
